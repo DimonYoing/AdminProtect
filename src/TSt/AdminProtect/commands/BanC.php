@@ -8,7 +8,7 @@ use pocketmine\player\Player;
 class BanC extends APCommand{
     private $cfg;
     public function __construct(Loader $plugin){
-        parent::__construct($plugin, "ban", "Ban specified player", "/ban <player> [reason...]", null, []);
+        parent::__construct($plugin, "ban", "§c§lЗаблокировать игрока", "/ban <player> [reason...]", null, []);
         $this->setPermission("adminprotect.ban.use");
     }
     public function execute(CommandSender $sender, $alias, array $args): bool{
